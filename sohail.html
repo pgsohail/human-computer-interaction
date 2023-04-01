@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lunch Ordering System</title>
+</head>
+<body>
+    <header>
+        <h1>Company Lunch Ordering System</h1>
+    </header>
+    <main>
+        <section class="order-form">
+            <h2>Order Your Lunch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="meal">Choose a meal:</label>
+                <select id="meal" required>
+                    <option value="">Select a meal</option>
+                    <option value="option1">Meal Option 1</option>
+                    <option value="option2">Meal Option 2</option>
+                    <option value="option3">Meal Option 3</option>
+                </select>
+                
+                <label for="special-requests">Special requests:</label>
+                <textarea id="special-requests" rows="3"></textarea>
+                
+                <button type="submit">Order Lunch</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 - sohail sadiq inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
