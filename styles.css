@@ -1,66 +1,56 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
 header {
-    background: #4caf50;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 1rem;
 }
 
-main {
-    padding: 2rem;
-}
-
-.order-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+.login, .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
 }
 
 form {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
+    margin-top: 0.5rem;
 }
 
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
+input {
+    margin-top: 0.2rem;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    background: #4caf50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #45a049;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
     margin-top: 1rem;
+}
+
+.lunch-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lunch-option {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.lunch-option img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
